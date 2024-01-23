@@ -36,11 +36,9 @@
         
             <% 
                 var todayCount = 0;
-    
                 for (var i = 0; i < todos.length; i++) {
                     var dueDate = new Date(todos[i].dueDate);
                     var currentDate = new Date();
-        
                     if (dueDate.toDateString() === currentDate.toDateString()) {
                         todayCount++;
             %>
@@ -66,7 +64,6 @@
                 for (var i = 0; i < todos.length; i++) {
                     var dueDate = new Date(todos[i].dueDate);
                     var currentDate = new Date();
-        
                     if (dueDate > currentDate) {
                         laterCount++;
             %>
